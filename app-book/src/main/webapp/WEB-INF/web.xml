@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Simple Servlet Application</display-name>
+  <servlet>
+    <servlet-name>ServletGlobal</servlet-name>
+    <servlet-class>com.book.app.servlet.ServletGlobal</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletGlobal</servlet-name>
+    <url-pattern>/servlet/global</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletInicio</servlet-name>
+    <servlet-class>com.book.app.servlet.ServletInicio</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletInicio</servlet-name>
+    <url-pattern>/servlet/inicio</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletCollectionInsertar</servlet-name>
+    <servlet-class>com.book.app.servlet.ServletCollectionInsertar</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletCollectionInsertar</servlet-name>
+    <url-pattern>/servlet/insertarcoleccion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletItemInsertar</servlet-name>
+    <servlet-class>com.book.app.servlet.ServletItemInsertar</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletItemInsertar</servlet-name>
+    <url-pattern>/servlet/insertaritem</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <servlet-name>ServletEditImage</servlet-name>
+    <servlet-class>com.book.app.servlet.ServletEditImage</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletEditImage</servlet-name>
+    <url-pattern>/servlet/image</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletServerImages</servlet-name>
+    <servlet-class>com.book.app.servlet.ServletServerImages</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletServerImages</servlet-name>
+    <url-pattern>/server/image/*</url-pattern>
+  </servlet-mapping>
+</web-app>
